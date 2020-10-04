@@ -19,7 +19,8 @@ string longestPalindrome (vector<string> &strs){
         for(int j = 0; j < size; j++) {
             head = j;
             matchPalindrome(head, tail, strs[i]);
-
+           
+            // 更新最长的子串
             if(tail-head+1 > max_len) {
                 max_len = tail-head+1;
                 max_str = i;
@@ -49,12 +50,5 @@ void matchPalindrome (int &head, int &tail, string &str) {
         head--;
     }
 
-}
-
-int main() {
-    vector<string> a;
-    a.push_back("ccbabdc");
-    std::cout << longestPalindrome (a) << std::endl;
-    return 0;
 }
 
