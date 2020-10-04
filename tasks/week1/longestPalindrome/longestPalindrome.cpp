@@ -20,10 +20,10 @@ string longestPalindrome(string& strs)
 	// maxIndex: the maximum index of the input string
 	int maxIndex = strs.length() - 1;
 
-	// index: the index of the first character of the longest string
-	// length: the length of the longest string
-	int index = 0;
-	int length = 0;
+	// indexOfMax: the index of the first character of the longest string
+	// lengthOfMax: the length of the longest string
+	int indexOfMax = 0;
+	int lengthOfMax = 0;
 
 	for (int i = 0; i <= maxIndex; i++)
 	{
@@ -34,15 +34,15 @@ string longestPalindrome(string& strs)
 		     (strs[left] == strs[right]);
 		     left--, right++){;}
 
-		if ((right - left > 2) && (right - left - 1 > length))
+		if ((right - left > 2) && (right - left - 1 > lengthOfMax))
 		{
-			index = left + 1;
-			length = right - left - 1;
+			indexOfMax = left + 1;
+			lengthOfMax = right - left - 1;
 		}
 	}
-	if (length == 0)
+	if (lengthOfMax == 0)
 	{
 		return "";
 	}
-	return strs.substr(index, length);
+	return strs.substr(indexOfMax, lengthOfMax);
 }

@@ -3,6 +3,8 @@
 using namespace std;
 int main(int argc, char** argv)
 {
+	// Test fot function 'longestPalindrome'
+	
 	string sample;
 	if (argc > 1)
 	{
