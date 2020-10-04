@@ -1,3 +1,7 @@
+/*
+输入字符串str
+输出str中的最长回文子串
+*/
 #include <iostream>
 #include <string>
 using namespace std;
