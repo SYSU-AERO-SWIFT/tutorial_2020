@@ -27,9 +27,8 @@ string longestPalindrome(string& strs)
 
 	for (int i = 0; i <= maxIndex; i++)
 	{
-		left = i;
+		left = i - 1;
 		right = i;
-		for(;(left >= 0) && (strs[left] == strs[i]); left--){;}
 		for(;(right <= maxIndex) && (strs[right] == strs[i]); right++){;}
 		for (;
 		     (left >= 0) && (right <= maxIndex) &&
