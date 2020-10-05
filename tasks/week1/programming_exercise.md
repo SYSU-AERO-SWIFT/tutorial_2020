@@ -10,7 +10,7 @@
 
 ### Description
 
-编写一个函数来查找字符串数组中的最长回文子串。
+编写一个函数来查找字符串中的最长回文子串。
 
 如果不存在回文子串，返回空字符串""。
 
@@ -23,7 +23,7 @@ string longestPalindrome(vector<string>& strs);
 
 ### Output
 
-返回最长的公共后缀
+返回最长回文子串
 
 ---
 

@@ -18,7 +18,7 @@
 
 1. 在命令行使用 `vim` 编辑一个 C++ 程序，然后用 `g++` 编译这个 C++ 程序, 输出 `Hello World`。请不要使用任何类型的 IDE。
 1. 根据 Wiki 教程将整个工程提交到 GitHub 上。**在此工程中，请勿提交不重要的中间文件。**（如 `.o` 文件和编译的可执行文件。提示：使用 `.gitignore`）
-1. 完成[程序设计能力练习](https://github.com/SYSU-AERO-SWIFT/tutorial_2020/blob/master/tasks/week1/programming_exercise.md)第一周题目最大公共后缀，同样使用 `g++` 编译。  
+1. 完成[程序设计能力练习](https://github.com/SYSU-AERO-SWIFT/tutorial_2020/blob/master/tasks/week1/programming_exercise.md)第一周题目最长回文子串，同样使用 `g++` 编译。  
 1. 预先安装 OpenCV，参考资料可见入门教程。
 
 **评分标准：**
