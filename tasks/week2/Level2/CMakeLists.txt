@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(Level2)
+add_executable(demo ./test/main.cpp ./src/binarization.cpp ./src/getNumbers.cpp ./src/getDigitalTube.cpp ./src/svm.cpp ./src/trainingSetProcess.cpp)
+find_package(OpenCV 3 REQUIRED)
+target_link_libraries(demo ${OpenCV_LIBS})
