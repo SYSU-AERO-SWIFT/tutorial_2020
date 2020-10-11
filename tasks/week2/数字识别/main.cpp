@@ -73,7 +73,7 @@ int main(int argc, char**argv)
 	for (int i = 0; i < contours.size(); i++)
 	{
 		rectangle.push_back(boundingRect(contours[i]));
-		if (rectangle[i].height > 92)//通过高度判断框到的是数字还是干扰的白点
+		if (rectangle[i].height > 92 && rectangle[i].height<200)//通过高度判断框到的是数字还是干扰的白点
 		{
 			cout <<"第"<<i+1<< "个矩形的高为：" << rectangle[i].height << "   宽为：" << rectangle[i].width << endl;
 			index.push_back(i);//存放框住数字的矩形的下标
