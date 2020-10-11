@@ -1,0 +1,10 @@
+Answers:
+hard_sample1  8435
+hard_sample2  0538
+hard_sample3  6701
+hard_sample4  9245
+hard_sample5  1708
+hard_sample6  1063
+hard_sample7  4307
+hard_sample8  2951
+
