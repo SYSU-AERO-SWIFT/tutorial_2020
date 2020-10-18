@@ -1,0 +1,8 @@
+prefix=/home/anifan/tutorial_2020/tasks/week3/ros_exercise/install
+
+Name: exercise1
+Description: Description of exercise1
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime

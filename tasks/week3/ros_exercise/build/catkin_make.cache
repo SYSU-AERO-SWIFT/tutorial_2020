@@ -1,0 +1,2 @@
+exercise1
+-DCATKIN_DEVEL_PREFIX=/home/anifan/tutorial_2020/tasks/week3/ros_exercise/devel -DCMAKE_INSTALL_PREFIX=/home/anifan/tutorial_2020/tasks/week3/ros_exercise/install -G Unix Makefiles
