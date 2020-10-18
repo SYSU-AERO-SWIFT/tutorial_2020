@@ -1,0 +1,2 @@
+beginner_tutorials:dynamic_param:publisher_pkg:subscriber_pkg
+-DCATKIN_DEVEL_PREFIX=/home/big-big-yu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/big-big-yu/catkin_ws/install -G Unix Makefiles
