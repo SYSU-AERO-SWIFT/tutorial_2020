@@ -1,8 +1,8 @@
-prefix=/home/kcli/tutorial_2020/tasks/week3/ros_project/devel
+prefix=/home/sunny/tutorial_2020/tasks/week3/ros_project/devel
 
 Name: little_car
 Description: Description of little_car
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/kcli/tutorial_2020/tasks/week3/ros_project/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

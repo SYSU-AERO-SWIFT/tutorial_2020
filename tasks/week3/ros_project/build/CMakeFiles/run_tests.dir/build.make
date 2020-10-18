@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/src
+CMAKE_SOURCE_DIR = /home/sunny/tutorial_2020/tasks/week3/ros_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/build
+CMAKE_BINARY_DIR = /home/sunny/tutorial_2020/tasks/week3/ros_project/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/kcli/tutorial_2020/tasks/week3/ros_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcli/tutorial_2020/tasks/week3/ros_project/src /home/kcli/tutorial_2020/tasks/week3/ros_project/src /home/kcli/tutorial_2020/tasks/week3/ros_project/build /home/kcli/tutorial_2020/tasks/week3/ros_project/build /home/kcli/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sunny/tutorial_2020/tasks/week3/ros_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunny/tutorial_2020/tasks/week3/ros_project/src /home/sunny/tutorial_2020/tasks/week3/ros_project/src /home/sunny/tutorial_2020/tasks/week3/ros_project/build /home/sunny/tutorial_2020/tasks/week3/ros_project/build /home/sunny/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

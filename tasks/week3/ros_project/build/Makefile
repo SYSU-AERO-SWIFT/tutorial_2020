@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/src
+CMAKE_SOURCE_DIR = /home/sunny/tutorial_2020/tasks/week3/ros_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/build
+CMAKE_BINARY_DIR = /home/sunny/tutorial_2020/tasks/week3/ros_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcli/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles /home/kcli/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles /home/sunny/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcli/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/tutorial_2020/tasks/week3/ros_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -283,6 +283,19 @@ gtest: cmake_check_build_system
 gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named car
+
+# Build rule for target.
+car: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 car
+.PHONY : car
+
+# fast build rule for target.
+car/fast:
+	$(MAKE) -f little_car/CMakeFiles/car.dir/build.make little_car/CMakeFiles/car.dir/build
+.PHONY : car/fast
 
 #=============================================================================
 # Target rules for targets named little_car_node
@@ -904,6 +917,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... car"
 	@echo "... little_car_node"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/little_car_node.dir/src/parser.cpp.o"
-  "/home/kcli/tutorial_2020/tasks/week3/ros_project/devel/lib/little_car/little_car_node.pdb"
-  "/home/kcli/tutorial_2020/tasks/week3/ros_project/devel/lib/little_car/little_car_node"
+  "/home/sunny/tutorial_2020/tasks/week3/ros_project/devel/lib/little_car/little_car_node.pdb"
+  "/home/sunny/tutorial_2020/tasks/week3/ros_project/devel/lib/little_car/little_car_node"
 )
 
 # Per-language clean rules from dependency scanning.
