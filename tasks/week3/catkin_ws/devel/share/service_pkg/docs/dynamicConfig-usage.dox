@@ -1,7 +1,0 @@
-\subsubsection usage Usage
-\verbatim
-<node name="server_node" pkg="service_pkg" type="server_node">
-  <param name="limit" type="double" value="0.5" />
-</node>
-\endverbatim
-

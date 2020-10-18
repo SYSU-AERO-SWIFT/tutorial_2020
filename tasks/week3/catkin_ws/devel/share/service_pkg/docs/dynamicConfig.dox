@@ -1,6 +1,0 @@
-\subsubsection parameters ROS parameters
-
-Reads and maintains the following parameters on the ROS server
-
-- \b "~limit" : \b [double] a number to limit min: 0.0, default: 0.5, max: 1.0
-

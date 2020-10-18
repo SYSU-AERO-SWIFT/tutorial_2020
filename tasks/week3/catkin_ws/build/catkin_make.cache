@@ -1,2 +1,0 @@
-service_pkg:topic_pkg
--DCATKIN_DEVEL_PREFIX=/home/chenr/tutorial_2020/tasks/week3/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chenr/tutorial_2020/tasks/week3/catkin_ws/install -G Unix Makefiles
