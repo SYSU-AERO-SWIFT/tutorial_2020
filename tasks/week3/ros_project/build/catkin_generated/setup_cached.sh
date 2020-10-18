@@ -7,8 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/kcli/tutorial_2020/tasks/week3/ros_project/devel:$CMAKE_PREFIX_PATH"
-export PKG_CONFIG_PATH="/opt/ros/melodic/lib/pkgconfig:/usr/local/lib/pkgconfig"
-export PWD="/home/kcli/tutorial_2020/tasks/week3/ros_project/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/kcli/tutorial_2020/tasks/week3/ros_project/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/kcli/tutorial_2020/tasks/week3/ros_project/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/lyx/store/tutorial_2020/tasks/week3/ros_project/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/lyx/store/tutorial_2020/tasks/week3/ros_project/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/lyx/store/tutorial_2020/tasks/week3/ros_project/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/lyx/store/tutorial_2020/tasks/week3/ros_project/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/lyx/store/tutorial_2020/tasks/week3/ros_project/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/lyx/store/tutorial_2020/tasks/week3/ros_project/src:$ROS_PACKAGE_PATH"

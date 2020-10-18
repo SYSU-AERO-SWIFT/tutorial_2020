@@ -1,0 +1,10 @@
+<launch>
+<node pkg="test7" name="maker1" type="maker1"/>
+<node pkg="test7" name="maker2" type="maker2"/>
+<node pkg="test7" name="maker3" type="maker3"/>
+<node pkg="test7" name="maker4" type="maker4"/>
+<node pkg="test7" name="frame" type="frame"/>
+<node pkg="test7" name="robot" type="robot"/>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find test7)/config/strat_rviz.rviz" required="true" />
+</launch>
+
