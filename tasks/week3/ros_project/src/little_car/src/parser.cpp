@@ -6,8 +6,12 @@
 #include <ros/ros.h>
 #include <random>
 #include <iomanip>
+#include "command_publisher/Command.h"
+
 geometry_msgs::Point position; //小车的位置信息
 geometry_msgs::Point velocity; //小车的速度控制
+float theta = 0.0;
+
 using namespace std;
 //示例函数  使小车前进
 //我们希望你能通过这个函数，模仿实现控制小车的速度，运动方向，转弯等动作
@@ -21,7 +25,7 @@ int move_forward(geometry_msgs::TransformStamped &odom_trans)
 		position.x += velocity.x;											//更新小车的位置信息
 		position.y += velocity.y;
 		position.z += velocity.z;
-        odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(0.0); //小车的角度设置
+        odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(theta); //小车的角度设置
 		return 0;
 }
 
@@ -46,6 +50,17 @@ int add_noise(geometry_msgs::TransformStamped &odom_trans)
 		position.z += noise[2];
 
 }
+
+void velocityCallback(const command_publisher::Command::ConstPtr& msg)
+{
+    velocity.x = msg->x;
+    velocity.y = msg->y;
+    velocity.z = msg->z;
+    theta = msg->theta;
+    ROS_INFO("Subcribe velocity command: x:%f  y:%f  z:%f theta:%f", msg->x, msg->y, msg->z, msg->theta);
+}
+
+
 int main(int argc, char** argv) {
     ros::init(argc, argv, "state_publisher");
     ros::NodeHandle n;
@@ -54,19 +69,26 @@ int main(int argc, char** argv) {
 	/* 
 	 *请添加一个Subscriber，从你自己编写的Publisher处订阅指令
 	 */
+    ros::init(argc, argv, "command_subscriber");
+    ros::NodeHandle node;
+    ros::Subscriber commandSub = node.subscribe("/velocity_command", 10, velocityCallback);
+    //ros::spinOnce();
+
 	/*
 	 *若有需要，也可以从小车处发布你所需要的信息
 	 */
+
+
     tf::TransformBroadcaster broadcaster;
-    ros::Rate loop_rate(30);
+    ros::Rate loop_rate(20);
     // message declarations
     geometry_msgs::TransformStamped odom_trans;
     sensor_msgs::JointState joint_state;
     odom_trans.header.frame_id = "odom";
     odom_trans.child_frame_id = "base_link";
-	velocity.x=0.0;    //速度设置，修改该参数可改变小车不同方向的速度
-	velocity.y=0.005;
-	velocity.z=0.0;
+	//velocity.x=0.0;    //速度设置，修改该参数可改变小车不同方向的速度
+	//velocity.y=0.005;
+	//velocity.z=0.0;
     while (ros::ok()) {
         /***********不重要的部分*********************/
 		joint_state.header.stamp = ros::Time::now();
@@ -81,13 +103,13 @@ int main(int argc, char** argv) {
 		joint_state.name[3] ="base_to_wheel_4";
 		joint_state.position[3] = 0;
         /********************************************/
-		
+		ros::spinOnce();	
 		//此处调用move_forward函数，使小车一直匀速前进
 		move_forward(odom_trans);
 		
 		pos_pub.publish(position);
         joint_pub.publish(joint_state);
-		add_noise(odom_trans);
+		//add_noise(odom_trans);
         broadcaster.sendTransform(odom_trans);
         loop_rate.sleep();
     }

@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="service_client" type="random_server" name="server" output="screen" />
+    <node pkg="service_client" type="random_client" name="client" output="screen" />
+</launch>
+
