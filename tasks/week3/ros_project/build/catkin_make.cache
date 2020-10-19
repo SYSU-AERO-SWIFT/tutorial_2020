@@ -1,2 +1,2 @@
-little_car
--DCATKIN_DEVEL_PREFIX=/home/kcli/tutorial_2020/tasks/week3/ros_project/devel -DCMAKE_INSTALL_PREFIX=/home/kcli/tutorial_2020/tasks/week3/ros_project/install -G Unix Makefiles
+little_car:random_float:random_int
+-DCATKIN_DEVEL_PREFIX=/root/tutorial_2020/tasks/week3/ros_project/devel -DCMAKE_INSTALL_PREFIX=/root/tutorial_2020/tasks/week3/ros_project/install -G Unix Makefiles
