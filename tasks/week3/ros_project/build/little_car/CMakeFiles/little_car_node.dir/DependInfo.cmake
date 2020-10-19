@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car/src/parser.cpp" "/home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car/CMakeFiles/little_car_node.dir/src/parser.cpp.o"
+  "/home/muyin/tutorial_2020/tasks/week3/ros_project/src/little_car/src/parser.cpp" "/home/muyin/tutorial_2020/tasks/week3/ros_project/build/little_car/CMakeFiles/little_car_node.dir/src/parser.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ramdom_num" name="client" type="ramdom_client" output="screen"/>
+    <node pkg="ramdom_num" name="server" type="ramdom_server" output="screen"/>
+</launch>

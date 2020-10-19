@@ -152,6 +152,10 @@ include_directories(
    ${catkin_LIBRARIES}
  )
 
+add_executable(car_publisher src/car_publisher.cpp)
+target_link_libraries(car_publisher ${catkin_LIBRARIES})
+
+
 #############
 ## Install ##
 #############

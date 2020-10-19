@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kcli/tutorial_2020/tasks/week3/ros_project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/muyin/tutorial_2020/tasks/week3/ros_project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,9 +37,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kcli/tutorial_2020/tasks/week3/ros_project/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/muyin/tutorial_2020/tasks/week3/ros_project/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

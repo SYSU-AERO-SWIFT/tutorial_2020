@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ramdom_num" name="pub" type="ramdom_publisher" output="screen"/>
+    <node pkg="ramdom_num" name="sub" type="ramdom_subscriber" output="screen"/>
+</launch>

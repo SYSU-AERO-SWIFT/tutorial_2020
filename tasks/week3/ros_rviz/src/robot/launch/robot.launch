@@ -1,0 +1,9 @@
+<launch>
+<node pkg="robot" name="maker1" type="maker1"/>
+<node pkg="robot" name="maker2" type="maker2"/>
+<node pkg="robot" name="maker3" type="maker3"/>
+<node pkg="robot" name="maker4" type="maker4"/>
+<node pkg="robot" name="frame" type="frame"/>
+<node pkg="robot" name="move" type="sim_robot"/>
+<node pkg="robot" name="plane" type="plane"/>
+</launch>
