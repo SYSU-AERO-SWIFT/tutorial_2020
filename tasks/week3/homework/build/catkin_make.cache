@@ -1,0 +1,2 @@
+direction_publisher:dynamic_refg:little_car:random_create:server_client
+-DCATKIN_DEVEL_PREFIX=/home/sae/homework/devel -DCMAKE_INSTALL_PREFIX=/home/sae/homework/install -G Unix Makefiles

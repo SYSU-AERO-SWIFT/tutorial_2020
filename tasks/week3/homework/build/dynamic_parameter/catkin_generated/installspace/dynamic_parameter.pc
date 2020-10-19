@@ -1,0 +1,8 @@
+prefix=/home/sae/homework/install
+
+Name: dynamic_parameter
+Description: Description of dynamic_parameter
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

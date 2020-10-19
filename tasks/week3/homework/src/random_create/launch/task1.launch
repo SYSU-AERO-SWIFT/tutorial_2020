@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="random_create" type="number_subscriber" name="number_subscriber" output="screen" />
+    <node pkg="random_create" type="number_publisher" name="number_publisher" output="screen" /> 
+</launch>
+
+

@@ -1,0 +1,8 @@
+prefix=/home/sae/homework/devel
+
+Name: dynamic_refg
+Description: Description of dynamic_refg
+Version: 0.0.0
+Cflags: -I/home/sae/homework/devel/include
+Libs: -L${prefix}/lib -ldynamic_refg
+Requires: dynamic_reconfigure roscpp rospy std_msgs

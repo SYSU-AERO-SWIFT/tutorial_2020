@@ -1,0 +1,8 @@
+prefix=/home/sae/homework/install
+
+Name: server_client
+Description: Description of server_client
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime
