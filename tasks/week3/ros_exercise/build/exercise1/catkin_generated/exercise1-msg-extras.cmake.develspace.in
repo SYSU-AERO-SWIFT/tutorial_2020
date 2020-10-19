@@ -1,0 +1,2 @@
+set(exercise1_MESSAGE_FILES "/home/anifan/tutorial_2020/tasks/week3/ros_exercise/src/exercise1/msg/random.msg")
+set(exercise1_SERVICE_FILES "/home/anifan/tutorial_2020/tasks/week3/ros_exercise/src/exercise1/srv/number.srv")
