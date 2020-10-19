@@ -20,7 +20,7 @@
     这是任务八中比较关键的一步，拼接并识别二维码。我们会给出四张二维码的切片图。  
     原图是一张维度为 21x21 的二维码图片，四张切片图的维度至少是 11x11 (可以是 11x12，12x12 或者其他大于 11x11 的维度) [详细请点击这里](http://www.aerialroboticscompetition.org/assets/downloads/qr_code_details.zip)
 
-    ![pic1](./pic/qr_code_standard.png)
+    ![pic1](qr_code_standard.png)
 
     图片测试的难度分为 3 个等级，每个等级包含 3 组图片，最后的要求是显示提取的残缺二维码图片与拼接的二维码图片并解码二维码内容。  
     **要求输出从输入到处理结束所需要的时间**。
