@@ -152,6 +152,9 @@ include_directories(
    ${catkin_LIBRARIES}
  )
 
+
+add_executable(car src/car.cpp)
+target_link_libraries(car ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

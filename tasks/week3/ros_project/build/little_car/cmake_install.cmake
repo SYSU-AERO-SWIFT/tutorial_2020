@@ -1,8 +1,8 @@
-# Install script for directory: /home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car
+# Install script for directory: /home/sunny/tutorial_2020/tasks/week3/ros_project/src/little_car
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kcli/tutorial_2020/tasks/week3/ros_project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sunny/tutorial_2020/tasks/week3/ros_project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car/catkin_generated/installspace/little_car.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sunny/tutorial_2020/tasks/week3/ros_project/build/little_car/catkin_generated/installspace/little_car.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/little_car/cmake" TYPE FILE FILES
-    "/home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car/catkin_generated/installspace/little_carConfig.cmake"
-    "/home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car/catkin_generated/installspace/little_carConfig-version.cmake"
+    "/home/sunny/tutorial_2020/tasks/week3/ros_project/build/little_car/catkin_generated/installspace/little_carConfig.cmake"
+    "/home/sunny/tutorial_2020/tasks/week3/ros_project/build/little_car/catkin_generated/installspace/little_carConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/little_car" TYPE FILE FILES "/home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/little_car" TYPE FILE FILES "/home/sunny/tutorial_2020/tasks/week3/ros_project/src/little_car/package.xml")
 endif()
 

@@ -1,0 +1,8 @@
+<launch>
+<node pkg="test7" name="hinder1" type="hinder1"/>
+<node pkg="test7" name="hinder2" type="hinder2"/>
+<node pkg="test7" name="hinder3" type="hinder3"/>
+<node pkg="test7" name="hinder4" type="hinder4"/>
+<node pkg="test7" name="frame" type="frame"/>
+<node pkg="test7" name="robot" type="robot"/>
+</launch>

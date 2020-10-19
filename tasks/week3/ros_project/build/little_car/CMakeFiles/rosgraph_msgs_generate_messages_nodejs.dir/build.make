@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/src
+CMAKE_SOURCE_DIR = /home/sunny/tutorial_2020/tasks/week3/ros_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/build
+CMAKE_BINARY_DIR = /home/sunny/tutorial_2020/tasks/week3/ros_project/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build: rosgraph
 .PHONY : little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 
 little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/sunny/tutorial_2020/tasks/week3/ros_project/build/little_car && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/kcli/tutorial_2020/tasks/week3/ros_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcli/tutorial_2020/tasks/week3/ros_project/src /home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car /home/kcli/tutorial_2020/tasks/week3/ros_project/build /home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car /home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sunny/tutorial_2020/tasks/week3/ros_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sunny/tutorial_2020/tasks/week3/ros_project/src /home/sunny/tutorial_2020/tasks/week3/ros_project/src/little_car /home/sunny/tutorial_2020/tasks/week3/ros_project/build /home/sunny/tutorial_2020/tasks/week3/ros_project/build/little_car /home/sunny/tutorial_2020/tasks/week3/ros_project/build/little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : little_car/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "little_car"
-PROJECT_SPACE_DIR = "/home/kcli/tutorial_2020/tasks/week3/ros_project/install"
+PROJECT_SPACE_DIR = "/home/sunny/tutorial_2020/tasks/week3/ros_project/install"
 PROJECT_VERSION = "0.0.0"
