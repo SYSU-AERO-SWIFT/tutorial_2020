@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car/src/parser.cpp
+/home/lyx/store/tutorial_2020/tasks/week3/ros_project/src/little_car/src/parser.cpp
 urdf/model.h
 -
 string
@@ -937,6 +937,8 @@ Vector3.h
 /opt/ros/melodic/include/tf/LinearMath/Vector3.h
 Quaternion.h
 /opt/ros/melodic/include/tf/LinearMath/Quaternion.h
+ros/macros.h
+-
 
 /opt/ros/melodic/include/tf/LinearMath/MinMax.h
 
@@ -953,6 +955,8 @@ Vector3.h
 /opt/ros/melodic/include/tf/LinearMath/Vector3.h
 QuadWord.h
 /opt/ros/melodic/include/tf/LinearMath/QuadWord.h
+ros/macros.h
+-
 
 /opt/ros/melodic/include/tf/LinearMath/Scalar.h
 math.h
@@ -1018,6 +1022,8 @@ boost/signals2.hpp
 geometry_msgs/TwistStamped.h
 /opt/ros/melodic/include/tf/geometry_msgs/TwistStamped.h
 tf2_ros/buffer.h
+-
+ros/macros.h
 -
 
 /opt/ros/melodic/include/tf/tfMessage.h

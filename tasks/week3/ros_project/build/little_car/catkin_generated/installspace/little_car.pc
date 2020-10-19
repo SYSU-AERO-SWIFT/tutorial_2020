@@ -1,8 +1,8 @@
-prefix=/home/kcli/tutorial_2020/tasks/week3/ros_project/install
+prefix=/home/lyx/store/tutorial_2020/tasks/week3/ros_project/install
 
 Name: little_car
 Description: Description of little_car
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/kcli/tutorial_2020/tasks/week3/ros_project/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 

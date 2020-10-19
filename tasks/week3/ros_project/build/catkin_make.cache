@@ -1,2 +1,2 @@
 little_car
--DCATKIN_DEVEL_PREFIX=/home/kcli/tutorial_2020/tasks/week3/ros_project/devel -DCMAKE_INSTALL_PREFIX=/home/kcli/tutorial_2020/tasks/week3/ros_project/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/lyx/store/tutorial_2020/tasks/week3/ros_project/devel -DCMAKE_INSTALL_PREFIX=/home/lyx/store/tutorial_2020/tasks/week3/ros_project/install -G Unix Makefiles

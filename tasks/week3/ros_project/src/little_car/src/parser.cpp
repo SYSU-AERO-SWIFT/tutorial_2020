@@ -7,6 +7,7 @@
 #include <random>
 #include <iomanip>
 geometry_msgs::Point position; //小车的位置信息
+geometry_msgs::Point pos; //小车的位置信息
 geometry_msgs::Point velocity; //小车的速度控制
 using namespace std;
 //示例函数  使小车前进
@@ -21,7 +22,10 @@ int move_forward(geometry_msgs::TransformStamped &odom_trans)
 		position.x += velocity.x;											//更新小车的位置信息
 		position.y += velocity.y;
 		position.z += velocity.z;
-        odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(0.0); //小车的角度设置
+		pos.x += position.x;											//更新小车的位置信息
+		pos.y += position.y;
+		pos.z += position.z;
+        odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(0.0-atan(velocity.x/velocity.y)); //小车的角度设置
 		return 0;
 }
 
@@ -46,26 +50,35 @@ int add_noise(geometry_msgs::TransformStamped &odom_trans)
 		position.z += noise[2];
 
 }
+
+// 接收到订阅的消息后，会进入消息回调函数
+void personInfoCallback(const geometry_msgs::Point::ConstPtr& msg)
+{
+    	velocity.x=msg->x;    //速度设置，修改该参数可改变小车不同方向的速度
+	velocity.y=msg->y;
+}
+
 int main(int argc, char** argv) {
     ros::init(argc, argv, "state_publisher");
     ros::NodeHandle n;
     ros::Publisher joint_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1);
 	ros::Publisher pos_pub = n.advertise<geometry_msgs::Point>("car_position",1); //小车的位置消息发布
-	/* 
-	 *请添加一个Subscriber，从你自己编写的Publisher处订阅指令
-	 */
+	
+	  // 创建一个Subscriber，订阅名为/car_speed的topic，注册回调函数personInfoCallback
+    ros::Subscriber car_speed_sub = n.subscribe("/car_speed", 1, personInfoCallback);
+    ros::Publisher car_pos_pub = n.advertise<geometry_msgs::Point>("car_pos",1); //小车的位置消息发布
 	/*
 	 *若有需要，也可以从小车处发布你所需要的信息
 	 */
     tf::TransformBroadcaster broadcaster;
-    ros::Rate loop_rate(30);
+    ros::Rate loop_rate(20);
     // message declarations
     geometry_msgs::TransformStamped odom_trans;
     sensor_msgs::JointState joint_state;
     odom_trans.header.frame_id = "odom";
     odom_trans.child_frame_id = "base_link";
-	velocity.x=0.0;    //速度设置，修改该参数可改变小车不同方向的速度
-	velocity.y=0.005;
+	velocity.x=-0.0;    //速度设置，修改该参数可改变小车不同方向的速度
+	velocity.y=0.0;
 	velocity.z=0.0;
     while (ros::ok()) {
         /***********不重要的部分*********************/
@@ -80,16 +93,18 @@ int main(int argc, char** argv) {
         joint_state.position[2] = 0;
 		joint_state.name[3] ="base_to_wheel_4";
 		joint_state.position[3] = 0;
-        /********************************************/
+        /********************************************/		
 		
 		//此处调用move_forward函数，使小车一直匀速前进
 		move_forward(odom_trans);
-		
+		car_pos_pub.publish(position);
 		pos_pub.publish(position);
         joint_pub.publish(joint_state);
 		add_noise(odom_trans);
         broadcaster.sendTransform(odom_trans);
-        loop_rate.sleep();
+	
+	ros::spinOnce();
+        loop_rate.sleep();		
     }
 
 
