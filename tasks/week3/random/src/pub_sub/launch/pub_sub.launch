@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="pub_sub" type="random_publisher" name="producer" output="screen" />
+	<node pkg="pub_sub" type="random_subscriber" name="reciever" output="screen" />
+</launch>

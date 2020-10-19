@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/src
+CMAKE_SOURCE_DIR = /home/destroyer/tutorial_2020/tasks/week3/ros_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcli/tutorial_2020/tasks/week3/ros_project/build
+CMAKE_BINARY_DIR = /home/destroyer/tutorial_2020/tasks/week3/ros_project/build
 
 # Utility rule file for tf_generate_messages_py.
 
@@ -63,10 +63,10 @@ little_car/CMakeFiles/tf_generate_messages_py.dir/build: tf_generate_messages_py
 .PHONY : little_car/CMakeFiles/tf_generate_messages_py.dir/build
 
 little_car/CMakeFiles/tf_generate_messages_py.dir/clean:
-	cd /home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/destroyer/tutorial_2020/tasks/week3/ros_project/build/little_car && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : little_car/CMakeFiles/tf_generate_messages_py.dir/clean
 
 little_car/CMakeFiles/tf_generate_messages_py.dir/depend:
-	cd /home/kcli/tutorial_2020/tasks/week3/ros_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcli/tutorial_2020/tasks/week3/ros_project/src /home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car /home/kcli/tutorial_2020/tasks/week3/ros_project/build /home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car /home/kcli/tutorial_2020/tasks/week3/ros_project/build/little_car/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/destroyer/tutorial_2020/tasks/week3/ros_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/destroyer/tutorial_2020/tasks/week3/ros_project/src /home/destroyer/tutorial_2020/tasks/week3/ros_project/src/little_car /home/destroyer/tutorial_2020/tasks/week3/ros_project/build /home/destroyer/tutorial_2020/tasks/week3/ros_project/build/little_car /home/destroyer/tutorial_2020/tasks/week3/ros_project/build/little_car/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : little_car/CMakeFiles/tf_generate_messages_py.dir/depend
 

@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/kcli/tutorial_2020/tasks/week3/ros_project/src/little_car/src/parser.cpp
+/home/destroyer/tutorial_2020/tasks/week3/ros_project/devel/include/command_publisher/Command.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/destroyer/tutorial_2020/tasks/week3/ros_project/src/little_car/src/parser.cpp
 urdf/model.h
 -
 string
@@ -23,6 +39,8 @@ random
 -
 iomanip
 -
+command_publisher/Command.h
+/home/destroyer/tutorial_2020/tasks/week3/ros_project/src/little_car/src/command_publisher/Command.h
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string
@@ -937,6 +955,8 @@ Vector3.h
 /opt/ros/melodic/include/tf/LinearMath/Vector3.h
 Quaternion.h
 /opt/ros/melodic/include/tf/LinearMath/Quaternion.h
+ros/macros.h
+-
 
 /opt/ros/melodic/include/tf/LinearMath/MinMax.h
 
@@ -953,6 +973,8 @@ Vector3.h
 /opt/ros/melodic/include/tf/LinearMath/Vector3.h
 QuadWord.h
 /opt/ros/melodic/include/tf/LinearMath/QuadWord.h
+ros/macros.h
+-
 
 /opt/ros/melodic/include/tf/LinearMath/Scalar.h
 math.h
@@ -1018,6 +1040,8 @@ boost/signals2.hpp
 geometry_msgs/TwistStamped.h
 /opt/ros/melodic/include/tf/geometry_msgs/TwistStamped.h
 tf2_ros/buffer.h
+-
+ros/macros.h
 -
 
 /opt/ros/melodic/include/tf/tfMessage.h
