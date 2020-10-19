@@ -33,3 +33,7 @@
 
 # Visual Studio code properties
 .vscode
+
+#ROS temp files
+devel
+build
