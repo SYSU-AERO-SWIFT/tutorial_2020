@@ -1,0 +1,7 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dynamic_reconfigure_node" pkg="dynamic_param" type="dynamic_reconfigure_node">
+  <param name="random_num" type="double" value="0.0" />
+</node>
+\endverbatim
+

@@ -1,0 +1,8 @@
+prefix=/home/big-big-yu/catkin_ws/install
+
+Name: dynamic_param
+Description: Description of dynamic_param
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ldynamic_param
+Requires: dynamic_reconfigure roscpp rospy

@@ -1,0 +1,8 @@
+<launch>
+<node name="myPublisher" pkg="publisher_pkg" type="myPublisher"/>
+<node name="myService" pkg="publisher_pkg" type="myService" />
+<node name="mySubscriber" pkg="subscriber_pkg" type="mySubscriber"/>
+<node name="myClient" pkg="subscriber_pkg" type="myClient" />
+<node name="dynamic_reconfigure_node" pkg="dynamic_param" type="dynamic_reconfigure_node"/>
+<node name="dynamic_client" pkg="dynamic_param" type="dynamic_client" />
+</launch>

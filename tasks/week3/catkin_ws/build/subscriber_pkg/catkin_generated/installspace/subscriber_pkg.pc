@@ -1,0 +1,8 @@
+prefix=/home/big-big-yu/catkin_ws/install
+
+Name: subscriber_pkg
+Description: Description of subscriber_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
