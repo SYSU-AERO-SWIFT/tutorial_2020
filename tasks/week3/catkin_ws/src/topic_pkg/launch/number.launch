@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<launch>
+<node name="publisher_node" pkg="topic_pkg" type="publisher"/>
+<node name="subscriber_node" pkg="topic_pkg" type="subscriber" output="screen"/>
+</launch>
