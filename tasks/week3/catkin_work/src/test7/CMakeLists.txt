@@ -167,6 +167,9 @@ target_link_libraries(frame ${catkin_LIBRARIES})
 add_executable(robot src/robot.cpp)
 target_link_libraries(robot ${catkin_LIBRARIES})
 
+add_executable(plane src/plane.cpp)
+target_link_libraries(plane ${catkin_LIBRARIES})
+
 #############
 ## Install ##
 #############

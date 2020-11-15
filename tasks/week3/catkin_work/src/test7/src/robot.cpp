@@ -16,7 +16,7 @@ struct move_robot{
 	void move();
 	void pos_go(int t);
 	private:
-	//大小
+//大小
  const float head_scalex=0.4,head_scaley=0.4,head_scalez=0.4;
  const float body_scalex=0.2,body_scaley=0.2,body_scalez=1.0;
  const float hand_scalex=0.2,hand_scaley=0.8,hand_scalez=0.2;
@@ -69,8 +69,6 @@ move_robot::move_robot(int n){
 	hand.color.g = 0.0f;
 	hand.color.b = 1.0f;
 	hand.color.a = 1.0;	
-
-	
 	
 	pos_x=rand()%12000/1000-6.00;
 	pos_y=rand()%12000/1000-6.00;
@@ -111,7 +109,7 @@ void move_robot::move(){
 		ori%=8;
 	}
 	//更新位置
-	head.pose.position.x = pos_x+head_posx;
+	/*head.pose.position.x = pos_x+head_posx;
     	head.pose.position.y = pos_y+head_posy;
     	head.pose.position.z = head_posz;
 	body.pose.position.x = pos_x+body_posx;
@@ -119,9 +117,19 @@ void move_robot::move(){
     	body.pose.position.z = body_posz;
 	hand.pose.position.x = pos_x+hand_posx;
     	hand.pose.position.y = pos_y+hand_posy;
-    	hand.pose.position.z = hand_posz;
+    	hand.pose.position.z = hand_posz;*/
 
 	
+	head.pose.position.x = pos_x;
+    	head.pose.position.y = pos_y;
+    	head.pose.position.z = head_posz;
+	body.pose.position.x = pos_x;
+    	body.pose.position.y = pos_y;
+    	body.pose.position.z = body_posz;
+	hand.pose.position.x = pos_x;
+    	hand.pose.position.y = pos_y;
+    	hand.pose.position.z = hand_posz;
+
 	head.lifetime = ros::Duration();
 	body.lifetime = ros::Duration();
 	hand.lifetime = ros::Duration();
@@ -190,9 +198,7 @@ int main( int argc, char** argv )
 	move_robot m9(9);
 	move_robot m10(10);
   while (ros::ok())
-  {
-    	
-		
+  {	
     // Publish the marker
     while (marker_pub.getNumSubscribers() < 1)
     {
