@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(borderDetection)
+add_executable(demo ./test/main.cpp ./src/find_contours.cpp ./src/draw_contours.cpp ./src/canny.cpp)
+find_package(OpenCV 3 REQUIRED)
+target_link_libraries(demo ${OpenCV_LIBS})
