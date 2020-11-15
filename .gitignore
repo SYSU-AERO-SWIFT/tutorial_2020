@@ -2,3 +2,6 @@
 *.out
 build/
 devel/
+!tasks/project/thread_project/build/
+!tasks/project/gate_project/build/
+
