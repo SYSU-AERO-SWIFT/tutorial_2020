@@ -1,0 +1,3 @@
+/home/sae/opencvtast/myCanny/build/CMakeFiles/rebuild_cache.dir
+/home/sae/opencvtast/myCanny/build/CMakeFiles/MyCanny.dir
+/home/sae/opencvtast/myCanny/build/CMakeFiles/edit_cache.dir
